@@ -1,314 +1,575 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PH Tech Studios | Futuristic Android & Mobile Games</title>
-    <meta name="description"
-        content="PH Tech Studios creates innovative Android apps and addictive mobile games with modern, futuristic designs." />
+    <meta
+      name="description"
+      content="PH Tech Studios creates innovative Android apps and addictive mobile games with modern, futuristic designs."
+    />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=Inter:wght@400;500;600&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
 
     <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Background Elements -->
     <div class="bg-elements">
-        <div class="glow-orb orb-1"></div>
-        <div class="glow-orb orb-2"></div>
-        <div class="glow-orb orb-3"></div>
-        <div class="particles-container" id="particles"></div>
+      <div class="glow-orb orb-1"></div>
+      <div class="glow-orb orb-2"></div>
+      <div class="glow-orb orb-3"></div>
+      <div class="particles-container" id="particles"></div>
     </div>
 
     <!-- Navigation -->
     <nav class="navbar glass-panel" id="navbar">
-        <div class="container nav-content">
-            <a href="#" class="logo">
-                <span class="logo-text">PH <span class="neon-text">Tech</span> Studios</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="#games">Games & Apps</a></li>
-                <li><a href="#tech">Tech Stack</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
+      <div class="container nav-content">
+        <a href="#" class="logo">
+          <span class="logo-text"
+            >PH <span class="neon-text">Tech</span> Studios</span
+          >
+        </a>
+        <ul class="nav-links">
+          <li><a href="#games">Games & Apps</a></li>
+          <li><a href="#tech">Tech Stack</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="container hero-container">
-            <div class="hero-content fade-up">
-                <div class="badge">Next-Gen Android Development</div>
-                <h1 class="hero-title">
-                    PH Tech <span class="neon-text">Studios</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Creating innovative Android apps and addictive mobile games.
-                    Experience the future of mobile entertainment.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#games" class="btn btn-primary">
-                        <i class="fab fa-google-play"></i> Download Apps
-                    </a>
-                    <a href="#games" class="btn btn-secondary">
-                        <i class="fas fa-gamepad"></i> Explore Games
-                    </a>
-                </div>
-            </div>
-            <div class="hero-visual fade-left">
-                <div class="phone-mockup">
-                    <div class="phone-screen">
-                        <div class="phone-content">
-                            <!-- Mockup inner elements -->
-                            <div class="mockup-apps-grid"
-                                style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px 10px;">
-                                <!-- App 1 -->
-                                <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
-                                    <div
-                                        style="width: 48px; height: 48px; background: transparent; border-radius: 12px; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); overflow: hidden;">
-                                        <img src="images/arrow-solver-icon.png" alt="Arrow Solver Icon"
-                                            style="width: 100%; height: 100%; object-fit: cover;">
-                                    </div>
-                                    <span
-                                        style="color: white; font-size: 0.6rem; text-align: center; opacity: 0.8;">Arrow
-                                        Solver</span>
-                                </div>
-                                <!-- App 2 -->
-                                <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
-                                    <div
-                                        style="width: 48px; height: 48px; background: transparent; border-radius: 12px; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); overflow: hidden;">
-                                        <img src="images/smart-drink-tracker-icon.png" alt="Smart Drink Tracker Icon"
-                                            style="width: 100%; height: 100%; object-fit: cover;">
-                                    </div>
-                                    <span
-                                        style="color: white; font-size: 0.55rem; text-align: center; opacity: 0.8; line-height: 1.2;">Smart Drink<br>Tracker</span>
-                                </div>
-                                <!-- App 3 -->
-                                <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
-                                    <div
-                                        style="width: 48px; height: 48px; background: transparent; border-radius: 12px; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); overflow: hidden;">
-                                        <img src="images/giga-timer-icon.png" alt="Giga Timer Icon"
-                                            style="width: 100%; height: 100%; object-fit: cover;">
-                                    </div>
-                                    <span
-                                        style="color: white; font-size: 0.6rem; text-align: center; opacity: 0.8;">Giga
-                                        Timer</span>
-                                </div>
-                                <!-- Dummy App 4 -->
-                                <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
-                                    <div
-                                        style="width: 48px; height: 48px; background: rgba(255,255,255,0.05); border-radius: 12px; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; color: white; border: 1px solid rgba(255,255,255,0.1);">
-                                        <i class="fas fa-camera"></i>
-                                    </div>
-                                    <span
-                                        style="color: white; font-size: 0.6rem; text-align: center; opacity: 0.5;">Camera</span>
-                                </div>
-                                <!-- Dummy App 5 -->
-                                <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
-                                    <div
-                                        style="width: 48px; height: 48px; background: rgba(255,255,255,0.05); border-radius: 12px; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; color: white; border: 1px solid rgba(255,255,255,0.1);">
-                                        <i class="fas fa-envelope"></i>
-                                    </div>
-                                    <span
-                                        style="color: white; font-size: 0.6rem; text-align: center; opacity: 0.5;">Mail</span>
-                                </div>
-                                <!-- Dummy App 6 -->
-                                <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
-                                    <div
-                                        style="width: 48px; height: 48px; background: rgba(255,255,255,0.05); border-radius: 12px; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; color: white; border: 1px solid rgba(255,255,255,0.1);">
-                                        <i class="fas fa-cog"></i>
-                                    </div>
-                                    <span
-                                        style="color: white; font-size: 0.6rem; text-align: center; opacity: 0.5;">Settings</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="floating-element el-1">
-                    <i class="fab fa-android"></i>
-                </div>
-                <div class="floating-element el-2"><i class="fas fa-rocket"></i></div>
-            </div>
+      <div class="container hero-container">
+        <div class="hero-content fade-up">
+          <div class="badge">Next-Gen Android Development</div>
+          <h1 class="hero-title">
+            PH Tech <span class="neon-text">Studios</span>
+          </h1>
+          <p class="hero-subtitle">
+            Creating innovative Android apps and addictive mobile games.
+            Experience the future of mobile entertainment.
+          </p>
+          <div class="hero-buttons">
+            <a href="#games" class="btn btn-primary">
+              <i class="fab fa-google-play"></i> Download Apps
+            </a>
+            <a href="#games" class="btn btn-secondary">
+              <i class="fas fa-gamepad"></i> Explore Games
+            </a>
+          </div>
         </div>
+        <div class="hero-visual fade-left">
+          <div class="phone-mockup">
+            <div class="phone-screen">
+              <div class="phone-content">
+                <!-- Mockup inner elements -->
+                <div
+                  class="mockup-apps-grid"
+                  style="
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 20px 10px;
+                  "
+                >
+                  <!-- App 1 -->
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      gap: 5px;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 48px;
+                        height: 48px;
+                        background: transparent;
+                        border-radius: 12px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                        overflow: hidden;
+                      "
+                    >
+                      <img
+                        src="./arrow-solver-icon.png"
+                        alt="Arrow Solver Icon"
+                        style="width: 100%; height: 100%; object-fit: cover"
+                      />
+                    </div>
+                    <span
+                      style="
+                        color: white;
+                        font-size: 0.6rem;
+                        text-align: center;
+                        opacity: 0.8;
+                      "
+                      >Arrow Solver</span
+                    >
+                  </div>
+                  <!-- App 2 -->
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      gap: 5px;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 48px;
+                        height: 48px;
+                        background: transparent;
+                        border-radius: 12px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                        overflow: hidden;
+                      "
+                    >
+                      <img
+                        src="./smart-drink-tracker-icon.png"
+                        alt="Smart Drink Tracker Icon"
+                        style="width: 100%; height: 100%; object-fit: cover"
+                      />
+                    </div>
+                    <span
+                      style="
+                        color: white;
+                        font-size: 0.55rem;
+                        text-align: center;
+                        opacity: 0.8;
+                        line-height: 1.2;
+                      "
+                      >Smart Drink<br />Tracker</span
+                    >
+                  </div>
+                  <!-- App 3 -->
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      gap: 5px;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 48px;
+                        height: 48px;
+                        background: transparent;
+                        border-radius: 12px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                        overflow: hidden;
+                      "
+                    >
+                      <img
+                        src="./giga-timer-icon.png"
+                        alt="Giga Timer Icon"
+                        style="width: 100%; height: 100%; object-fit: cover"
+                      />
+                    </div>
+                    <span
+                      style="
+                        color: white;
+                        font-size: 0.6rem;
+                        text-align: center;
+                        opacity: 0.8;
+                      "
+                      >Giga Timer</span
+                    >
+                  </div>
+                  <!-- Dummy App 4 -->
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      gap: 5px;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 48px;
+                        height: 48px;
+                        background: rgba(255, 255, 255, 0.05);
+                        border-radius: 12px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.5rem;
+                        color: white;
+                        border: 1px solid rgba(255, 255, 255, 0.1);
+                      "
+                    >
+                      <i class="fas fa-camera"></i>
+                    </div>
+                    <span
+                      style="
+                        color: white;
+                        font-size: 0.6rem;
+                        text-align: center;
+                        opacity: 0.5;
+                      "
+                      >Camera</span
+                    >
+                  </div>
+                  <!-- Dummy App 5 -->
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      gap: 5px;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 48px;
+                        height: 48px;
+                        background: rgba(255, 255, 255, 0.05);
+                        border-radius: 12px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.5rem;
+                        color: white;
+                        border: 1px solid rgba(255, 255, 255, 0.1);
+                      "
+                    >
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <span
+                      style="
+                        color: white;
+                        font-size: 0.6rem;
+                        text-align: center;
+                        opacity: 0.5;
+                      "
+                      >Mail</span
+                    >
+                  </div>
+                  <!-- Dummy App 6 -->
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      gap: 5px;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 48px;
+                        height: 48px;
+                        background: rgba(255, 255, 255, 0.05);
+                        border-radius: 12px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.5rem;
+                        color: white;
+                        border: 1px solid rgba(255, 255, 255, 0.1);
+                      "
+                    >
+                      <i class="fas fa-cog"></i>
+                    </div>
+                    <span
+                      style="
+                        color: white;
+                        font-size: 0.6rem;
+                        text-align: center;
+                        opacity: 0.5;
+                      "
+                      >Settings</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-element el-1">
+            <i class="fab fa-android"></i>
+          </div>
+          <div class="floating-element el-2"><i class="fas fa-rocket"></i></div>
+        </div>
+      </div>
     </section>
 
     <!-- Featured Apps & Games Section -->
     <section class="featured-section" id="games">
-        <div class="container">
-            <div class="section-header fade-up">
-                <h2>Featured <span class="neon-text">Apps & Games</span></h2>
-                <p>Discover our most popular creations downloaded by millions.</p>
-            </div>
-
-            <div class="cards-grid">
-                <!-- Game Card 1 -->
-                <div class="app-card glass-panel fade-up">
-                    <div class="card-image bg-gradient-1"
-                        style="display: flex; justify-content: center; align-items: center; padding: 30px 0;">
-                        <img src="images/arrow-solver-icon.png" alt="Arrow Solver Icon"
-                            style="width: 100px; height: 100px; border-radius: 22px; box-shadow: 0 10px 25px rgba(0,0,0,0.3);">
-                    </div>
-                    <div class="card-content">
-                        <h3>Arrow Solver: Flow Puzzle</h3>
-                        <p class="tag">Puzzle Game</p>
-                        <p class="description">
-                            An addictive logic puzzle game that challenges your mind.
-                            Connect the arrows and solve complex levels.
-                        </p>
-                        <a href="https://play.google.com/store/apps/details?id=com.phtechstudios.arrowsolver"
-                            class="btn-play" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-google-play"></i> Get it on Play Store
-                        </a>
-                    </div>
-                </div>
-
-                <!-- App Card 2 -->
-                <div class="app-card glass-panel fade-up" style="transition-delay: 0.1s">
-                    <div class="card-image bg-gradient-2"
-                        style="display: flex; justify-content: center; align-items: center; padding: 30px 0;">
-                        <img src="images/smart-drink-tracker-icon.png" alt="Smart Drink Tracker Icon"
-                            style="width: 100px; height: 100px; border-radius: 22px; box-shadow: 0 10px 25px rgba(0,0,0,0.3);">
-                    </div>
-                    <div class="card-content">
-                        <h3>Smart Drink Tracker</h3>
-                        <p class="tag">Health & Fitness</p>
-                        <p class="description">
-                            Stay hydrated and healthy with our smart water intake tracker.
-                            Set goals and receive timely reminders.
-                        </p>
-                        <a href="https://play.google.com/store/apps/details?id=com.prashant.hirpara.smartDrinkTracker"
-                            class="btn-play" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-google-play"></i> Get it on Play Store
-                        </a>
-                    </div>
-                </div>
-
-                <!-- App Card 3 -->
-                <div class="app-card glass-panel fade-up" style="transition-delay: 0.2s">
-                    <div class="card-image bg-gradient-3"
-                        style="display: flex; justify-content: center; align-items: center; padding: 30px 0;">
-                        <img src="images/giga-timer-icon.png" alt="Giga Timer Icon"
-                            style="width: 100px; height: 100px; border-radius: 22px; box-shadow: 0 10px 25px rgba(0,0,0,0.3);">
-                    </div>
-                    <div class="card-content">
-                        <h3>Giga Timer</h3>
-                        <p class="tag">Productivity</p>
-                        <p class="description">
-                            A powerful, large-display timer app designed for ultimate
-                            visibility and precise time management.
-                        </p>
-                        <a href="https://play.google.com/store/apps/details?id=com.prashanthirpara.gigatimer"
-                            class="btn-play" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-google-play"></i> Get it on Play Store
-                        </a>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2>Featured <span class="neon-text">Apps & Games</span></h2>
+          <p>Discover our most popular creations downloaded by millions.</p>
         </div>
+
+        <div class="cards-grid">
+          <!-- Game Card 1 -->
+          <div class="app-card glass-panel fade-up">
+            <div
+              class="card-image bg-gradient-1"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 30px 0;
+              "
+            >
+              <img
+                src="./arrow-solver-icon.png"
+                alt="Arrow Solver Icon"
+                style="
+                  width: 100px;
+                  height: 100px;
+                  border-radius: 22px;
+                  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+                "
+              />
+            </div>
+            <div class="card-content">
+              <h3>Arrow Solver: Flow Puzzle</h3>
+              <p class="tag">Puzzle Game</p>
+              <p class="description">
+                An addictive logic puzzle game that challenges your mind.
+                Connect the arrows and solve complex levels.
+              </p>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.phtechstudios.arrowsolver"
+                class="btn-play"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-google-play"></i> Get it on Play Store
+              </a>
+            </div>
+          </div>
+
+          <!-- App Card 2 -->
+          <div
+            class="app-card glass-panel fade-up"
+            style="transition-delay: 0.1s"
+          >
+            <div
+              class="card-image bg-gradient-2"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 30px 0;
+              "
+            >
+              <img
+                src="./smart-drink-tracker-icon.png"
+                alt="Smart Drink Tracker Icon"
+                style="
+                  width: 100px;
+                  height: 100px;
+                  border-radius: 22px;
+                  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+                "
+              />
+            </div>
+            <div class="card-content">
+              <h3>Smart Drink Tracker</h3>
+              <p class="tag">Health & Fitness</p>
+              <p class="description">
+                Stay hydrated and healthy with our smart water intake tracker.
+                Set goals and receive timely reminders.
+              </p>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.prashant.hirpara.smartDrinkTracker"
+                class="btn-play"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-google-play"></i> Get it on Play Store
+              </a>
+            </div>
+          </div>
+
+          <!-- App Card 3 -->
+          <div
+            class="app-card glass-panel fade-up"
+            style="transition-delay: 0.2s"
+          >
+            <div
+              class="card-image bg-gradient-3"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 30px 0;
+              "
+            >
+              <img
+                src="./giga-timer-icon.png"
+                alt="Giga Timer Icon"
+                style="
+                  width: 100px;
+                  height: 100px;
+                  border-radius: 22px;
+                  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+                "
+              />
+            </div>
+            <div class="card-content">
+              <h3>Giga Timer</h3>
+              <p class="tag">Productivity</p>
+              <p class="description">
+                A powerful, large-display timer app designed for ultimate
+                visibility and precise time management.
+              </p>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.prashanthirpara.gigatimer"
+                class="btn-play"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-google-play"></i> Get it on Play Store
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Tech Stack Section -->
     <section class="tech-section" id="tech">
-        <div class="container">
-            <div class="section-header fade-up">
-                <h2>Our <span class="neon-text">Technology</span> Stack</h2>
-                <p>Powered by the latest tools and frameworks.</p>
-            </div>
-
-            <div class="tech-grid fade-up">
-                <div class="tech-item glass-panel">
-                    <i class="fab fa-android tech-icon" style="color: #3ddc84"></i>
-                    <span>Android SDK</span>
-                </div>
-                <div class="tech-item glass-panel">
-                    <i class="fab fa-java tech-icon" style="color: #b07219"></i>
-                    <span>Kotlin / Java</span>
-                </div>
-                <div class="tech-item glass-panel">
-                    <i class="fab fa-unity tech-icon" style="color: #fff"></i>
-                    <span>Unity 3D</span>
-                </div>
-                <div class="tech-item glass-panel">
-                    <i class="fas fa-fire tech-icon" style="color: #ffca28"></i>
-                    <span>Firebase</span>
-                </div>
-                <div class="tech-item glass-panel">
-                    <i class="fab fa-google-play tech-icon" style="color: #00e676"></i>
-                    <span>Google Play Console</span>
-                </div>
-                <div class="tech-item glass-panel">
-                    <i class="fab fa-figma tech-icon" style="color: #f24e1e"></i>
-                    <span>Figma UI/UX</span>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2>Our <span class="neon-text">Technology</span> Stack</h2>
+          <p>Powered by the latest tools and frameworks.</p>
         </div>
+
+        <div class="tech-grid fade-up">
+          <div class="tech-item glass-panel">
+            <i class="fab fa-android tech-icon" style="color: #3ddc84"></i>
+            <span>Android SDK</span>
+          </div>
+          <div class="tech-item glass-panel">
+            <i class="fab fa-java tech-icon" style="color: #b07219"></i>
+            <span>Kotlin / Java</span>
+          </div>
+          <div class="tech-item glass-panel">
+            <i class="fab fa-unity tech-icon" style="color: #fff"></i>
+            <span>Unity 3D</span>
+          </div>
+          <div class="tech-item glass-panel">
+            <i class="fas fa-fire tech-icon" style="color: #ffca28"></i>
+            <span>Firebase</span>
+          </div>
+          <div class="tech-item glass-panel">
+            <i class="fab fa-google-play tech-icon" style="color: #00e676"></i>
+            <span>Google Play Console</span>
+          </div>
+          <div class="tech-item glass-panel">
+            <i class="fab fa-figma tech-icon" style="color: #f24e1e"></i>
+            <span>Figma UI/UX</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
-        <div class="container">
-            <div class="contact-card glass-panel fade-up">
-                <div class="contact-info">
-                    <h2>Get in <span class="neon-text">Touch</span></h2>
-                    <p>
-                        Have a project in mind or want to collaborate? Reach out to us.
-                    </p>
-                    <div class="social-links">
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-                <div class="contact-action"
-                    style="display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 20px;">
-                    <p style="color: var(--text-secondary); text-align: center; font-size: 1.1rem;">Click the button
-                        below to send us an email directly from your default email app.</p>
-                    <a href="mailto:phtechstudio@gmail.com" class="btn btn-primary"
-                        style="font-size: 1.2rem; padding: 15px 40px;">
-                        <i class="fas fa-paper-plane"></i> Email phtechstudio@gmail.com
-                    </a>
-                </div>
+      <div class="container">
+        <div class="contact-card glass-panel fade-up">
+          <div class="contact-info">
+            <h2>Get in <span class="neon-text">Touch</span></h2>
+            <p>
+              Have a project in mind or want to collaborate? Reach out to us.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fas fa-envelope"></i
+              ></a>
             </div>
+          </div>
+          <div
+            class="contact-action"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              gap: 20px;
+            "
+          >
+            <p
+              style="
+                color: var(--text-secondary);
+                text-align: center;
+                font-size: 1.1rem;
+              "
+            >
+              Click the button below to send us an email directly from your
+              default email app.
+            </p>
+            <a
+              href="mailto:phtechstudio@gmail.com"
+              class="btn btn-primary"
+              style="font-size: 1.2rem; padding: 15px 40px"
+            >
+              <i class="fas fa-paper-plane"></i> Email phtechstudio@gmail.com
+            </a>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <span class="logo-text">PH <span class="neon-text">Tech</span> Studios</span>
-                    <p>Shaping the future of mobile experiences.</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#games">Games</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 PH Tech Studios. All rights reserved.</p>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="logo-text"
+              >PH <span class="neon-text">Tech</span> Studios</span
+            >
+            <p>Shaping the future of mobile experiences.</p>
+          </div>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+            <a href="#contact">Contact</a>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 PH Tech Studios. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
